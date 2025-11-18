@@ -5,6 +5,13 @@
   <title>Carlotta Giacchetta</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Personal webpage of Carlotta Giacchetta" />
+
+  <!-- Icone social (Font Awesome) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
   <style>
     :root {
       --bg: #fff5f8;
@@ -180,16 +187,6 @@
       font-size: 0.9rem;
     }
 
-    .hero-links a {
-      padding: 0.25rem 0.6rem;
-      border-radius: 999px;
-      background: rgba(236, 72, 153, 0.06);
-    }
-
-    .hero-links a:hover {
-      background: rgba(236, 72, 153, 0.13);
-    }
-
     .profile-pic-wrapper {
       justify-self: center;
     }
@@ -287,6 +284,37 @@
       font-style: italic;
     }
 
+    /* Icone social tonde rosa */
+
+    .social-icons {
+      display: flex;
+      gap: 0.9rem;
+      margin-top: 0.8rem;
+      align-items: center;
+    }
+
+    .social-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      border: 2px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      color: var(--accent);
+      font-size: 18px;
+      transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+      text-decoration: none;
+    }
+
+    .social-icon:hover {
+      background: var(--accent);
+      color: #fff;
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
     footer {
       padding: 1rem;
       text-align: center;
@@ -318,29 +346,54 @@
             Hi, I'm Carlotta<span class="emoji">🌸</span>
           </h1>
           <p class="hero-subtitle">
-            PhD student in Artificial Intelligence at the University of Trento.  
-            <!-- I work on foundation models and <b>multi-teacher distillation</b> for satellite imagery. -->
+            PhD student in Artificial Intelligence at the University of Trento.
           </p>
 
           <div class="hero-tags">
             <span class="tag">AI &amp; Machine Learning</span>
-            <!-- <span class="tag">Remote Sensing</span> -->
-            <!-- <span class="tag">Foundation Models</span> -->
-            <!-- <span class="tag">Selective Prediction</span> -->
           </div>
 
           <p class="muted">
-            I hold an MSc in Artificial Intelligence Systems from DISI (University of Trento) 
-            and a BSc in Statistics from the University of Milano-Bicocca, 
+            I hold an MSc in Artificial Intelligence Systems from DISI (University of Trento)
+            and a BSc in Statistics from the University of Milano-Bicocca,
             and I worked as a research intern at FBK on foundation models for Earth Observation.
           </p>
 
-          <div class="hero-links">
-            <!-- TODO: sostituisci i link con quelli reali -->
-            <a href="https://scholar.google.com/citations?user=SGND678AAAAJ&hl=it&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
-            <a href="https://github.com/CarlottaGiacchetta" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/carlotta-giacchetta-840b1a213?originalSubdomain=it" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="carlotta.giacchetta@unitn.it">Email</a>
+          <!-- Icone social -->
+          <div class="hero-links social-icons">
+            <a class="social-icon"
+               href="https://github.com/CarlottaGiacchetta"
+               target="_blank" rel="noopener"
+               aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a class="social-icon"
+               href="https://www.linkedin.com/in/carlotta-giacchetta-840b1a213?originalSubdomain=it"
+               target="_blank" rel="noopener"
+               aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a class="social-icon"
+               href="https://twitter.com"
+               target="_blank" rel="noopener"
+               aria-label="Twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a class="social-icon"
+               href="https://scholar.google.com/citations?user=SGND678AAAAJ&hl=it&oi=ao"
+               target="_blank" rel="noopener"
+               aria-label="Google Scholar">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+
+            <a class="social-icon"
+               href="mailto:carlotta.giacchetta@unitn.it"
+               aria-label="Email">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
           </div>
         </div>
 
@@ -399,7 +452,7 @@
           <li>
             <span class="pub-title">Argumentative analysis of Italian legal decisions with large language models</span><br />
             <span class="pub-venue">Ongoing work</span><br />
-            <span class="muted">Exploring GPT-based pipelines for argument mining in Italian civil and criminal cases, 
+            <span class="muted">Exploring GPT-based pipelines for argument mining in Italian civil and criminal cases,
             leveraging constitutional argument types.</span>
           </li>
         </ul>
@@ -432,18 +485,17 @@
           The easiest way to reach me is via email:
         </p>
         <p>
-          <!-- Sostituisci con la tua mail universitaria/privata -->
-          <a href="mailto:tu.email@unitn.it">tu.email@unitn.it</a>
+          <a href="mailto:carlotta.giacchetta@unitn.it">carlotta.giacchetta@unitn.it</a>
         </p>
         <p class="muted">
-          You can also find me on GitHub and LinkedIn (see links at the top of the page).
+          You can also find me on GitHub, LinkedIn and Google Scholar (see icons at the top of the page).
         </p>
       </section>
     </div>
   </main>
 
   <footer>
-    &copy; <span id="year"></span> Carlotta Giacchetta · Built with ❤️ and GitHub Pages
+    &copy; <span id="year"></span> Carlotta Giacchetta · Built with 💗 and GitHub Pages
   </footer>
 
   <script>
